@@ -1,0 +1,54 @@
+Singleton design pattern creational patternlar arasýnda yer alýr. Singleton desgin pattern çalýþma zamanýnda yalnýzca 1 object yaratýlmasýný garanti eden tasarým desenidir.
+
+Kullanýmýna ihtiyaç duyulan durum þudur :
+
+Birden çok sýnýfýn ayný instance’ý kullanmasý gerekmektedir.
+Tüm uygulama için yalnýzca bir nesne olmasý gerekmektedir.
+Sadece bir nesne olduðu (unique) garanti edilmelidir.
+
+Tek bir nesneye ihtiyaç duyulan durumlarda (veri tabaný baðlantýlarý, port baðlantýlarý, dosya iþlemleri, loglama iþlemleri,bildirimlerde, iþ katmaný servislerimizde) kullanýlýr
+
+Bu gereklilikler için bir sýnýf yaratýrýz ve sýnýfýn kendi instance’ýný yönetmesini saðlarýz.
+
+Önemli nokta : Bir sýnýfýn yalnýzca bir instance’ýnýn bulunduðundan emin olmalýyýz ve buna global eriþim noktasý saðlamalýyýz.
+
+Singleton pattern iki türlü uygulanabilmektedir.
+
+1.Adým : Sýnýftan new operatörü ile nesne üretimi engellenir. Bunun için constructor eriþimi private yapýlýr
+2.Adým : Üretilecek tekil instanceyi tutacak static bir referans noktasý alýnýr.
+3.Adým : Instance talep etmemmizi saðlayacak bir metot yada property tanýmlanýr. Bu member static olan referansa ait bir nesne var mý kontrol eder.
+Varsa o nesneyi döndürür yoksa yeni oluþturup referansla iþaretleyip yine döndürür. Yada ikinci yöntem olarak metot yada property
+tanýmlandýktan sonra static olan referansý kontrolsüz direkt geri döndürür. Nesne üretim sorumluluðunu static
+constructor'da gerçekleþtirir.
+
+Static yöntemlerle de bu amacý saðlayabiliriz. Ama bu þekilde yazýlýmcýnýn iradesine baðlý kalýrýz. Singleton patternda buna izin verilmez.
+
+Global deðiþkenlere eriþmek için bu patterný kullanmak kalýbýn amacýný ihlal eder. Eðer varsa bunlarý static bir üye olarak tasarlamak daha doðru.
+
+Artýlarý : 
+-Bir sýnýfýn tek bir örneði olur
+-Ýlgili sýnýf için merkezi bir eriþim noktasý kazanmýþ oluruz
+-Yalnýza ilk talep edildiðinde üretilir
+
+Eksileri :
+-Single Responsibility ilkesini ihlal eder. Sýnýfýn tekil nesnesini oluþturmak ve o sýnýfýn içeriðindeki iþlevleri ayný anda yapmak zorunda kalýr
+-Bu pattern asenkron süreçlerde birden fazla instance oluþturabilme ihtimaline sahiptir
+-Constructor eriþilemediði için unit testlerde sorun çýkabilir.
+
+Sýnýrlýlýklarý :
+-Antipattern oldugu durumlar olabilir
+-Kod ölçeklenebilirliðine pek uygun deðildir
+-Test edilebilirliðe pek uygun deðildir
+-Tek sorumluluk prensibiyle çeliþmektedir
+-Inheritance operasyonlarýnda kullanýlamaz.
+
+Diðer Patternlarla Ýliþkileri :
+
+-Bazen bazý sýnýflardan tek bir nesne deðil de belirli sayýda nesne oluþturulmasý gerekebilmektedir. Bunun için ihityaç olacak pattern Multiton Pattern denir.
+-Facade Patternin cogunlukla Singleton olarak tasarlanmasý daha elveriþlidir.
+-Flyweight Pattern Singletona benzeyebilir. Fakat ikisinin arasýndaki fark Singletonda nesneler deðiþebilir fakat Flyweightte nesneler deðiþtirilemez
+-Abstract Factoreis, Builders ve Prototypes Patternlarýn hepsi Singleton olarak tasarlanabilir
+
+
+
+Global deðiþkenler üzerinde daha sýký denetime ihtiyac oldugu zaman Singleton kullanýlabilir
