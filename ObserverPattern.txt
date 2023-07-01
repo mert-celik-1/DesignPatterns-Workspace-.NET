@@ -1,0 +1,12 @@
+Bu pattern behavioral design pattern sýnýfýna girer.
+
+Bir objenin durumu deðiþtirildiðinde iliþkili olduðu tüm objeler bilgilendirilir.
+
+Örnek olarak e-ticaret sitelerinde stoða girince haber ver fonksiyonu denilebilir.
+
+Observer adý üzerinde gözlemci, izleyici, gözcü yahut gözetmen diye nitelendirilen, anlamý gibi iþlev gören bir tasarým desenidir. Elimizdeki mevcut nesnenin durumunda herhangi bir deðiþiklik olduðunda,
+bu deðiþiklerden diðer nesneleri haberdar eden bir tasarýmdan bahsediyoruz. Dahada net bir þekilde bahsetmek gerekirse, elimizdeki “x” nesnesinin “y” özelliðinde bir güncellenme, 
+deðiþiklik yahut belirli bir þartýn gerçekleþmesi gibi bir durum cereyan ettiðinde bu “x” nesnesini -izleyen- -gözleyen- diðer “z”, “w”, “k” vs. nesnelerine bu yeni durumu bildiren sisteme Observer tasarým deseni diyoruz.
+
+Þimdi Observer Design Pattern için teorik olarak örnek olay ele alalým.Elimizde bir Öðrenci nesnesi olsun. Bu Öðrenciyi takip eden; Anne, Baba ve Öðretmen nesneleri olsun.
+Okul, Öðrenci dersi astýðý zaman onu takip eden Annesine, Babasýna ve Öðretmenine direkt olarak bu durumu haber veriyor olsun
