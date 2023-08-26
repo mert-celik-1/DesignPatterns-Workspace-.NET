@@ -1,0 +1,18 @@
+Chain Of Responsibility Pattern, sorumluluk zinciri adý ile de bilinen Behavioral yani nesneler arasýndaki baðlantýyý ayarlayan design patterin kategorisindeki  bir tasarým desenidir.
+
+CoR bir amaca yönelik bir dizi iþlemi gerçekleþtiren nesnelerin birbirlerinden baðýmsýz bir þekilde çalýþmasýný ve her bir nesnenin sadece kendisine tanýmlý iþleri yapmasýný saðlayan bir design patterindýr. 
+Sorumluluk zinciri ismi de burdan gelmektedir. Bu nesneler arasýndaki tek baðlantý mesaj(request) yapýsýdýr. Bütün nesneler bu mesaj yapýsýný kullanarak iþlerini gerçekleþtirir. 
+Bu nesneler, çalýþma yapýsý olarak ayný iþi yapmalarýna raðmen birbirlerinden haberdar olmamalarý loosly coupled (gevþek baðlý) nesneler olarak anýlmalarýna sebep olmaktadýr. 
+CoR deseni daha çok bolca if-else bloklarý geçen yerlerde kullanýlmalýdýr. Yoksa belli bir süre sonra kodlar kontrolden çýkabilir.
+
+Programýnýzýn farklý türdeki istekleri çeþitli þekillerde iþlemesi gerekiyor, fakat bu isteklerin türleri ve sýralamalarýný önceden bilmiyorsanýz Chain of Responsibility desenini kullanabilirsiniz.
+
+Bu model bir kaç iþleyiciden oluþan bir zincir oluþturmanýza ve bir istek geldiðinde bu zincirdeki iþleyicilerin hangisi veya hangilerinin bu isteði iþleyeceklerine karar vermelerine olanak tanýr. Bu þekilde tüm iþleyiciler isteði iþleme alma þansýna sahip olur.
+
+Belirli bir sýrayla bir kaç iþleyiciyi yürütmek gerekli olduðunda chain of responsibility desenini kullanabilirsiniz.
+
+Zincirdeki iþleyicileri herhangi bir sýrayla baðlayabildiðiniz için istekler zincirden tam olarak planladýðýnýz sýrada geçecektir.
+
+Belirli bir iþleyici dizisinin elemanlarý ve sýralarýnýn çalýþma anýnda deðiþmesi gerekiyorsa chain of responsibility desenini kullanabilirsiniz.
+
+Ýþleyici sýnýfýnýn içinde, bir sonraki iþleyicinin referansýný tutan alaný deðiþtirecek ayarlayýcýlar dahil ederseniz iþleyicileri çalýþma anýnda ekleyebilir, çýkartabilir veya sýralarýný deðiþtirebilirsiniz.
