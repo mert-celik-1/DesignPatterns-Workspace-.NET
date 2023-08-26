@@ -30,29 +30,13 @@ class JsonBankApiAdapter : IBankApi
 
     public bool ExecuteTransaction(TransferTransaction transferTransaction)
     {
-        return _jsonBankApi.ExecuteTransaction(transferTransaction);
+        return _jsonBankApi.Execute(transferTransaction);
     }
 }
 
-class XMLBankApiAdapter : IBankApi
+class JsonBankApi 
 {
-    private readonly XMLBankApi _xMLBankApi;
-
-    public XMLBankApiAdapter()
-    {
-        _xMLBankApi = new();    
-    }
-
-    public bool ExecuteTransaction(TransferTransaction transferTransaction)
-    {
-        return _xMLBankApi.ExecuteTransaction(transferTransaction);
-    }
-}
-
-
-class JsonBankApi : IBankApi
-{
-    public bool ExecuteTransaction(TransferTransaction transferTransaction)
+    public bool Execute(TransferTransaction transferTransaction)
     {
         var xml = $$""""
                 {
