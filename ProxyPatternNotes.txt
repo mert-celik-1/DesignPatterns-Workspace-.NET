@@ -1,0 +1,9 @@
+Structural bir tasarým kalýbýdýr.
+
+Proxy Design Pattern, bir nesneye olan eriþimin kontrol altýna alýnmasý amacý ile kullanýlýr. Ýstemcilerin direkt olarak ilgili nesneye ulaþmasý yerine bir vekil 
+aracýlýðý ile (dolaylý olarak) nesneye ulaþmasýný saðlar. Vekil nesne, yalnýzca gerekli durumlarda asýl nesne ile iletiþime geçer ve ilgili iþlemler gerçekleþtirilir.
+Kullanýlmasý ile birlikte sistem performansýndaki düþüþlere izin verilmemesi ve potansiyel güvenlik tehditlerinin engellenmesi gibi avantajlar elde edilir.
+
+Proxyde ayný arayüz kullanýlýr.
+Adapterda farklý bir arayüz.
+Decoratorde daha geliþmiþ bir arayüz.

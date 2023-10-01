@@ -34,6 +34,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibilityPatternExample", "ChainOfResponsibilityPattern\ChainOfResponsibilityPatternExample\ChainOfResponsibilityPatternExample.csproj", "{384B9615-67D7-4C9D-ABCC-591EB779936B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProxyPattern", "ProxyPattern", "{0B4C111A-1300-4510-875C-BA3BCF3B631A}"
+	ProjectSection(SolutionItems) = preProject
+		ProxyPatternNotes.txt = ProxyPatternNotes.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyExample", "ProxyPattern\ProxyExample\ProxyExample.csproj", "{8E32B9FA-CA01-4ACC-A5A3-1AFA7D7AD81A}"
 EndProject
