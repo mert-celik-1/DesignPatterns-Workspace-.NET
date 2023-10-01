@@ -4,52 +4,38 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SingletonPattern", "SingletonPattern", "{CD94506A-ADF8-4583-A298-5AFD21B5D847}"
-	ProjectSection(SolutionItems) = preProject
-		SingletonPatternNotes.txt = SingletonPatternNotes.txt
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonPattern-ConsoleExample", "SingletonPattern\SingletonPattern-ConsoleExample\SingletonPattern-ConsoleExample.csproj", "{A7C9C225-9BF4-4F6D-AA6A-F13967CA79C7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonPattern-NetCoreExample", "SingletonPattern\SingletonPattern-NetCoreExample\SingletonPattern-NetCoreExample.csproj", "{76EFC7CB-842F-4864-B430-A9BCC6E5B659}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FactoryMethodPattern", "FactoryMethodPattern", "{AC4AD375-3C19-4861-BABB-4F59FE9002E8}"
-	ProjectSection(SolutionItems) = preProject
-		FactoryMethodNotes.txt = FactoryMethodNotes.txt
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethodExample", "FactoryMethodPattern\FactoryMethodExample\FactoryMethodExample.csproj", "{5509987B-DFBE-436A-8420-DDCD1E1B4D89}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryExample", "FactoryMethodPattern\FactoryExample\FactoryExample.csproj", "{0AE969C1-6DE9-439F-86FA-5DBA0CD4CC53}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AbstractFactoryPattern", "AbstractFactoryPattern", "{519E6398-2122-4D01-9B75-747890373318}"
-	ProjectSection(SolutionItems) = preProject
-		AbstractFactoryPatternNotes.txt = AbstractFactoryPatternNotes.txt
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactoryExample", "AbstractFactoryPattern\AbstractFactoryExample\AbstractFactoryExample.csproj", "{8EAFCB78-536D-4432-89B6-206E13D0D119}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactoryExamplePlusFactoryMethodPattern", "AbstractFactoryPattern\AbstractFactoryExamplePlusFactoryMethodPattern\AbstractFactoryExamplePlusFactoryMethodPattern.csproj", "{EC55F4B4-E1AF-4E7E-9D5C-291B5784BFD0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ObserverPattern", "ObserverPattern", "{459A9A6E-1895-450D-AEDC-1316F170108A}"
-	ProjectSection(SolutionItems) = preProject
-		ObserverPattern.txt = ObserverPattern.txt
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverPattern", "ObserverPattern\ObserverPattern\ObserverPattern.csproj", "{CF2E5B7A-7D1C-4937-A24D-3E95BDC96BC3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdapterPattern", "AdapterPattern", "{2169DFF9-CFCE-463A-8FC3-952E3E3F5FBA}"
-	ProjectSection(SolutionItems) = preProject
-		AdapterPatternNotes.txt = AdapterPatternNotes.txt
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterPatternExample", "AdapterPattern\AdapterPatternExample\AdapterPatternExample.csproj", "{3F0F444D-07B0-4968-83A4-B10E07552221}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibilityPattern", "ChainOfResponsibilityPattern", "{6EB4FCC5-5BB8-4381-8022-4A8F942EDB74}"
-	ProjectSection(SolutionItems) = preProject
-		ChainOfResponsibilityNotes.txt = ChainOfResponsibilityNotes.txt
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityPatternExample", "ChainOfResponsibilityPattern\ChainOfResponsibilityPatternExample\ChainOfResponsibilityPatternExample.csproj", "{384B9615-67D7-4C9D-ABCC-591EB779936B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibilityPatternExample", "ChainOfResponsibilityPattern\ChainOfResponsibilityPatternExample\ChainOfResponsibilityPatternExample.csproj", "{384B9615-67D7-4C9D-ABCC-591EB779936B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProxyPattern", "ProxyPattern", "{0B4C111A-1300-4510-875C-BA3BCF3B631A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyExample", "ProxyPattern\ProxyExample\ProxyExample.csproj", "{8E32B9FA-CA01-4ACC-A5A3-1AFA7D7AD81A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +79,10 @@ Global
 		{384B9615-67D7-4C9D-ABCC-591EB779936B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{384B9615-67D7-4C9D-ABCC-591EB779936B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{384B9615-67D7-4C9D-ABCC-591EB779936B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E32B9FA-CA01-4ACC-A5A3-1AFA7D7AD81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E32B9FA-CA01-4ACC-A5A3-1AFA7D7AD81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E32B9FA-CA01-4ACC-A5A3-1AFA7D7AD81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E32B9FA-CA01-4ACC-A5A3-1AFA7D7AD81A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +97,7 @@ Global
 		{CF2E5B7A-7D1C-4937-A24D-3E95BDC96BC3} = {459A9A6E-1895-450D-AEDC-1316F170108A}
 		{3F0F444D-07B0-4968-83A4-B10E07552221} = {2169DFF9-CFCE-463A-8FC3-952E3E3F5FBA}
 		{384B9615-67D7-4C9D-ABCC-591EB779936B} = {6EB4FCC5-5BB8-4381-8022-4A8F942EDB74}
+		{8E32B9FA-CA01-4ACC-A5A3-1AFA7D7AD81A} = {0B4C111A-1300-4510-875C-BA3BCF3B631A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {91CDBCC6-B36D-41C7-B151-359B5B82E486}

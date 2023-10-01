@@ -1,0 +1,29 @@
+Factory Method bir creational design pattern örneðidir.
+
+Kod sürecinde ihtiyaç olan nesnelerin türüne sýnýfýna referansýna odaklanmaksýzýn bu nesnelerin üretilmesi gerekmektedir.
+Bu pattern nesne oluþturma sorumluluðunu yardýmcý bir sýnýfa devrederek bu sürecin maliyetini ihtiyaç anýndan soyutlamaktadýr.
+
+Örnek olarak þifreleme algoritmalarýný barýndýran sýnýflarý düþünebiliriz. Özel nesne gruplarýnýn instance üretimini ayrý ayrý gerçekleþtirmektense
+merkezi bir sýnýf üzerinden bu sýnýflarýn üretimini saðlamak geliþtirici açýsýndan daha faydalýdýr
+
+Ýhtiyaç duyulan nesnelerin sýnýf isimlerini ve baðýmlýlýklarýný tam olarak tahmin edemediðimiz durumlarda kullanabiliriz.
+
+Bu pattern ile üretilen nesneleri Singleton hale getirebiliriz.
+
+Belirli nesneleri oluþtururken çok sayýda tekrar eden kod söz konusuysa bunlarýn yaþam döngüsünün oluþturulmasýný tutarlý bir þekilde garanti eden ve 
+merkezi bir sýnýf üzerinden üretilmelerine konsantre olup yönetmemizi saðlayan bir patterndir.
+
+Factory Method Patterný 3 farklý þekilde uygulayabiliriz ?
+
+1) Factory Yöntemi : Ortak arayüz uygulayan sýnýflarda direkt new operatörüyle üretimi gerçekleþtiririz.  (Dog-Tiger tek bir factory üzerinden üretilir)
+
+2) Factory Method Yöntemi : Direkt nesne üretmekten ziyade alt factoryler üzerinden sýnýflarý üretiriz.  (Dog ve Tigerin kendine özel Factory sýnýflarý olur ve bu sýnýflar üzerinden üretilir)
+
+3) Abstract Factory : Her ürün ailesi için farklý bir arayüz tanýmlanmaktadýr.
+
+
+
+Open Closed prensibine aykýrýdýr.
+
+Factory Method pattern, üretim karmaþasý ve maliyeti (constructor maliyeti) az olan sýnýflar için tercih edilebilir. Eðer maliyeti fazlaysa
+Abstract Factory, Prototype veya Builder Patternlar daha iyi olabilir.

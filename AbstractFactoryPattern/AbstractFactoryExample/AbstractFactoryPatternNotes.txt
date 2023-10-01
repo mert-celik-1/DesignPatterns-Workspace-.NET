@@ -1,0 +1,26 @@
+Factory design pattern’de tek bir ürün ailesine ait tek bir arayüz mevcutken,abstract factory’de farklý ürün aileleri için farklý arayüzler mevcuttur.
+
+Fabrika olarak düþünürsek, Factory DP sadece tek bir ürünün üretildiði fabrika, Abstract Factory DP ise farklý farklý ürünlerin üretildiði fabrika olarak düþünebiliriz.
+
+Creational Design Patterndýr
+
+Abstract Factory Ne Zaman Kullanýlýr?
+
+Birden fazla ürün ailesi ile çalýþmak durumunda kaldýðýmýzda , ürün ailesi ile istemci tarafýný soyutlamak için kullanýlýr.
+
+Ürün ailelerinin oluþumunu istemci tarafýndan ayýrarak, karar verme koþulu olmadan, esnek ve geliþtirilebilir bir yapý kurmamýzý saðlar.
+
+Artýlarý :
+
+- Uygulamanýn somut nesnelere olan baðýmlýlýðýný arayüz tabanlý çalýþmayla soyutlar.
+- Tasarým sonraki süreçte daha kolay geniþletilebilir.
+- Concrete sýnýflarýn izolasyonunu saðlar.
+- SR ve OC prensiplerine uygundur.
+
+Eksileri :
+- Birçok yeni arayüz ve sýnýf tanýmlanmasý olduðundan biraz karmaþýklýða yol açabilir.
+
+
+-Factory Method tek bir arayüz kullanýrken abstractta birden fazla arayüz kullanýlýr.
+-Factory Method patternda tek instance üretilirken Abstract Factory patternde birden fazla instance üretilmektedir.
+-Factory patternde hangi sýnýfýn instancesinin oluþturulmasý gerektiði if else yada switch yapýlarýyla anaþýlmaktadýr. Abstract Factoryde ise her alt sýnýf için factory sýnýfý tasarlandýgý için bu yapýlardan kurtulunmaktadýr.
