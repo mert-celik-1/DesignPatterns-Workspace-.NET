@@ -1,0 +1,24 @@
+Behavioral kategorisinde yer alan bir patterndir.
+
+Bir fonksiyonun birden fazla yapýlýþ þekli olduðu takdirde, bu fonksiyonelliði farklý versiyonlarýyla kullanmak istendiðinde kullanýlabilecek bir design patternidir.
+
+Ayný iþi farklý þekillerde yapan birden fazla concrete strategy classýmýz olduðunda bunlarý bir strategy class üzerinden clienta sunmak, strategy classýna da bu concrete 
+tiplere ait ortak ata olan interfaceyi vermek , ilerleyen zamanlarda bu concrete tiplere bir yenisi daha eklendiðinde , iþimizi kolaylaþtýracak, bu durumda tek yapmamýz 
+gereken bu concrete tipi ortak interfaceden türetmek yeterli olacaktýr.
+
+Bridge, State, Strategy (ve bir dereceye kadar Adapter) çok benzer yapýya sahiptir. Aslýnda, bu desenlerin hepsi kompozisyon, yani iþi baþka nesnelere delege etme esasýna dayanýr. 
+Fakat, her biri farklý bir soruna çözüm üretirler. Desenler kodunuzu belirli bir yolla oluþturmak için kesin tarifler deðildir.
+
+Decorator bir nesnenin görünümünü deðiþtirmenize izin verirken Strateji özünü deðiþtirmenize olanak tanýr.
+
+Her ikisi de bir nesneyi parametre olarak kullanmayý saðladýðý için Command ve Strategy benzer desenler olarak görülebilir. Fakat aslýnda çok farklý amaçlarý vardýr;
+Command herhangi bir iþlemin bir nesneye dönüþtürülmesi için kullanýlýr. Bu iþlemin parametreleri nesnenin alanlarý haline gelir. Bu dönüþüm iþlemin çalýþmasýný ertelemenizi, sýraya almanýzý, 
+geçmiþini saklamanýzý ve uzak servislere gönderebilmenizi saðlar.
+Öte yandan Strategy ayný þeyi yapmak için farklý yöntemler sunar ve tek bir baðlam içerisinde algoritmalarý deðiþtirebilmenize olanak tanýr.
+
+Bir nesne içinde bir algoritmanýn farklý türevlerini kullanmak ve çalýþma esnasýnda bir algoritmadan diðerine geçebilmek istediðinizde strateji tasarým kalýbýn kullanabilirsiniz.
+
+Strateji deseni, belirli alt görevleri farklý þekillerde gerçekleþtirebilen farklý alt nesnelerle iliþkilendirerek, nesnenin davranýþýný çalýþma zamanýnda dolaylý olarak deðiþtirmenize 
+olanak tanýr.
+
+Yalnýzca bazý davranýþlarý yürütme biçimleri bakýmýndan farklýlýk gösteren çok sayýda benzer sýnýfýnýz olduðunda strategy tasarým kalýbýný kullanabilirsiniz.
