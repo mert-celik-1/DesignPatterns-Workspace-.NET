@@ -1,0 +1,18 @@
+Decorator tasarým deseni, structural tasarým desenlerinden biridir. Bir nesneye dinamik olarak yeni özellikler eklemek için kullanýlýr. 
+Kalýtým kullanmadan da bir nesnenin görevlerini artýrabileceðimizi gösterir.
+
+1. loosely-coupled uygulamalar yapmayý saðlar.
+2. Runtime zamanýnda(dinamik olarak) bir nesneye yeni özellikler eklenmesini saðlar.
+3. Özellikleri kalýtým yolu dýþýnda composition ve delegation ile de alýnabilmesini saðlar.
+4. open-closed prensibinin uygulandýðý tasarým desenidir.
+
+Diðer tasarým desenleri/kalýplarý ile iliþkisi
+
+Adapter mevcut bir nesnenin arayüzünü deðiþtirirken, Decorator nesnenin arayüzünü deðiþtirmeden yeni özellikler ekler. Ayrýca Adapter özyinelemeli (recursive) kompozisyonlarý desteklemezken, Decoratorle bu mümkündür.
+
+Adapter sardýðý nesne için farklý bir arayüz sunar, Proxy bunu ayný arayüzle yapar, Decorator ise ayný arayüzü geliþtirir.
+
+Chain of Responsibility (sorumluluk zinciri) ve Decorator sýnýflarýnýn yapýlarý çok benzerdir. Her iki desende iþlemi bir dizi nesneye aktarmak için özyinelemeli kompozisyonlara ihtiyaç duysalar da bazý önemli farklarý vardýr;
+
+Chain Of Responsibility iþlemleri birbirinden baðýmsýz olarak çalýþtýrabilir. Herhangi bir zamanda isteði aktarmayý da durdurabilirler. Öte yandan çeþitli Decoratorler nesnenin davranýþýný geliþtirirken bunu 
+temel arayüzle tutarlý olarak yaparlar ve isteðin akýþýný durdurabilmeleri mümkün deðildir.
