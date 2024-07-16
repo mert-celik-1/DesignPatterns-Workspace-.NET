@@ -1,0 +1,28 @@
+Creational Design Patterndir.
+ 
+Builder Pattern, karmaşık nesnelerin adım adım oluşturulmasını ve bu sürecin farklı varyasyonlarla yönetilmesini sağlayan yaratıcı bir tasarım desenidir. 
+Bu desen, özellikle bir nesnenin oluşturulma sürecinde birden fazla adım ve yapılandırma seçeneği olduğunda kullanışlıdır.
+
+Amaç
+Builder Pattern'ın amacı, bir nesnenin oluşturulma sürecini ve iç yapılandırmalarını birbirinden ayırmaktır. Bu sayede aynı oluşturma süreciyle farklı nesneler oluşturulabilir.
+
+Kullanım Alanları
+-Bir nesnenin oluşturulma sürecinde birçok isteğe bağlı parametre veya farklı adımlar varsa.
+-Nesnelerin oluşturulma sırasının kontrol edilmesi gerekiyorsa.
+-Karmaşık nesnelerin yapılandırılması ve okunabilirliği artırılmak isteniyorsa.
+
+Avantajları
+-Karmaşık nesnelerin oluşturulması için daha temiz ve anlaşılır bir kod yapısı sağlar.
+-Aynı oluşturma süreciyle farklı türde nesneler oluşturulabilir.
+-Nesne oluşturma kodu ile nesne kullanımı kodunu birbirinden ayırır.
+-Nesnelerin iç yapılandırmalarını daha esnek hale getirir.
+
+Dezavantajları
+-Ekstra kod yazımına ve sınıfların oluşturulmasına neden olabilir.
+-Küçük ve basit nesneler için kullanımı gereksiz karmaşıklık yaratabilir.
+
+Builder Pattern Bileşenleri
+1) Product (Ürün): Oluşturulacak karmaşık nesne.
+2) Builder: Ürünün farklı kısımlarını tanımlamak için arayüz veya soyut sınıf.
+3) Concrete Builder: Builder arayüzünü uygulayan ve ürünün belirli bir somut versiyonunu oluşturan sınıflar.
+4) Director: Builder arayüzünü kullanarak nesnenin oluşturulma sürecini yöneten sınıf.
